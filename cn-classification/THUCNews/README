@@ -1,0 +1,7 @@
+# README
+
+Zewei Chu zeweichu@gmail.com
+本数据集来自THUCNews
+
+classes.txt 每一行对应一个class
+{train,dev,text}.txt有两个field，由,隔开。第一个field对应class的index，第二个field对应需要分类的文本。
