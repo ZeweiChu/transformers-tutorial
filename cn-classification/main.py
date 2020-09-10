@@ -59,8 +59,6 @@ class THUCNewsProcessor(DataProcessor):
     def _create_examples(self, lines, set_type):
         """Creates examples for the training, dev and test sets."""
         test_mode = set_type == "test"
-        if test_mode:
-            lines = lines[1:]
         examples = []
         for (i, line) in enumerate(lines):
             guid = "%s-%s" % (set_type, i)
